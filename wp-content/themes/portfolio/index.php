@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <main class="layout" itemscope itemtype="https://schema.org/person">
+    <main class="layout main" itemscope itemtype="https://schema.org/person">
         <section class="introduction">
             <h2 class="introduction__title title" itemprop="name">Seda Karadeniz</h2>
             <p class="introduction__para" itemprop="jobTitle">Web development & Web design</p>

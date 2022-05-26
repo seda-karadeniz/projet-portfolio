@@ -68,103 +68,163 @@ label.labelMenu, #toggle
 }
 */
 
-header{
+header {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-
-}
-.nav{
-  background-color: $bg_color;
-  min-height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
-  /*
-  transform: translateX(-110%);
-  transition: .5s ease;
-  z-index: 999;
-  */
+  margin-top: 3rem;
+  margin-left: 4rem;
 
-  &__container{
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+
+  ul li {
+    margin-right:3rem;
+    margin-top: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+      border: solid 1px pink;
+      padding:30px 20px ;
+    }
+
+    a{
+      font-size: $txt_font_size;
+      color: $txt_color;
+      text-decoration: none;
+
+    }
+  }/**/
+}
+.nav__toggle input{
+  display: none;
+}
+@media (max-width: 550px) {
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+ .nav{
+    position: absolute;
+    top: 40px;
+    left:0;
+    right: 0;
+    width: 70%; //70
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding-top: 20px;
+    justify-content: flex-start;
+
+    transform: translateX(90%);
+    transition: .5s ease;
+    z-index: 1;
+
+
+    &__container{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 30px;
+      padding-left: 25px;
+      padding-right: 25px;
+      //margin-right: 40px;
+    }
+
+    &__link{
+
+      color: white;
+      text-decoration: none;
+      font-size: $txt_font_size;
+    }
+  }
+  .nav{
+    padding-left: 40px;
   }
 
-  &__link{
+  #menuToggle{
+    position: relative;
+  }
+  #menuToggle span
+  {
 
-    color: white;
-    text-decoration: none;
+    //margin-right: 30px;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+    transform-origin: center;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+
+  }
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -10px;
+    cursor: pointer;
+
+    opacity: 0; //hide this
+    z-index: 2; //place it over the hamburger *!
+
+  }
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 55% -55%;
+  }
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg);
+    background: #ffffff;
+  }
+  #menuToggle input:checked ~ span + span
+  {
+    opacity: 1;
+    transform: rotate(140deg);
+    background: #ffffff;
+  }
+
+  #menu
+  {
+
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 20%);
+
+    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+    background-color: $bg_color;
+    min-height: 100vh;
+
   }
 }
-#menuToggle input:checked .nav .nav__container{
-  transform: translateX(0);
-}
 
-#menuToggle{
-  position: relative;
-}
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  background: #cdcdcd;
-  border-radius: 3px;
 
-  z-index: 1;
-  transform-origin: center;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-  opacity 0.55s ease;
 
-}
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  top: -10px;
-  cursor: pointer;
-
-  opacity: 0; //hide this
-  z-index: 2; //and place it over the hamburger *!
-
-  -webkit-touch-callout: none;
-}
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 55% -50%;
-}
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg);
-  background: #ffffff;
-}
-#menuToggle input:checked ~ span + span
-{
-  opacity: 1;
-  transform: rotate(140deg);
-  background: #ffffff;
-}
 
 
 

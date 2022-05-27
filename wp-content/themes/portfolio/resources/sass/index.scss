@@ -2,6 +2,8 @@ $bg_color : #1F1F1F;
 $txt_color : white;
 $pink_color: #FFAFBD;
 $txt_font_size : 1.8rem;
+$title_font_size: 4rem;
+$subTitle_font_size: 2.7rem;
 $txt_font_size_mobile : 1.6rem;
 $title_font_size_mobile : 3.6rem;
 $subTitle_font_size_mobile : 2.4rem;
@@ -17,6 +19,7 @@ html{
   color:$txt_color;
   margin-right: 4rem;
   margin-left: 4rem;
+  scroll-behavior: smooth;
 }
 
 .hidden{
@@ -33,47 +36,13 @@ html{
 .title{
   font-size: $title_font_size_mobile;
 }
-
-/*.ligne_horizontal {
-  display: flex;
-  flex-direction: row;
+.subTitle{
+  font-size: $subTitle_font_size_mobile;
 }
 
-.ligne_horizontal:before,
-.ligne_horizontal:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 2px solid $pink_color;
-  width: 50px;
-  margin: auto;
-}*/
-
-/* headlines with lines */
-/* headlines with lines */
-
-/*
-.introduction__container-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.introduction span{
-  margin-left: 7rem;
-  width: 50px;
-  height: 4px;
-  margin-bottom: 0.5rem;
-  background: $pink_color;
-  border-radius: 3px;
-
-  border: pink solid 1px;
-  box-shadow: #FFAFBD 0px 0px 5px 0px;
-
-}*/
-
+//deco btn
 a.btn{
   display: flex;
-  //padding-left: 40px;
-  //margin-left: 40px;
 
 }
 a.btn:before,
@@ -90,18 +59,13 @@ a span{
   visibility: hidden;
 }
 
-
-
-
-
-
 // ** introduction
 
 section.introduction{
   margin-top: 16rem;
   position: relative;
   z-index: 0;
-
+  min-height: 100vh;
 }
 section.introduction div:not(.introduction__rs) {
   display: flex;
@@ -135,4 +99,53 @@ a.btn{
     text-align: center;
 
   }
+  &__rs svg{
+    height: 20px;
+    width: auto;
+  }
+  &__rs {
+    display: flex;
+    margin-top: 120px;
+  }
+  &__rs span{
+    margin-right: 20px;
+  }
 }
+
+@media (min-width: 551px){
+  .title{
+    font-size: $title_font_size;
+  }
+  .subTitle{
+    font-size: $subTitle_font_size;
+  }
+
+
+  .introduction{
+    &__para{
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+
+    }
+    &__title{
+      margin-top: 40px;
+    }
+    &__rect svg{
+      width: 1300px;
+      height: auto;
+    }
+    &__para{
+      font-size: $subTitle_font_size;
+    }
+    &__rs svg{
+      height: 30px;
+      width: auto;
+    }
+    &__rs {
+      margin-top: 250px;
+    }
+  }
+}
+
+
+

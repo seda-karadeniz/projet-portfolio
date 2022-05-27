@@ -4,7 +4,7 @@
             <figure class="project__fig">
                 <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
             </figure>
-            <h3 class="project__title"><?= get_the_title(); ?></h3>
+            <h3 class="project__title subTitle"><?= get_the_title(); ?></h3>
             <p class="project__small-desc"><?= get_field('small_description'); ?></p>
             <div class="arrow-left">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25.242" viewBox="0 0 24 25.242" >

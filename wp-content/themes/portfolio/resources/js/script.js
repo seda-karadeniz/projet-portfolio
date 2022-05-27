@@ -1,17 +1,19 @@
- const burgerMenu = {
-        init(){
-            document.documentElement.classList.add('js-enabled');
-            this.e_btn = document.querySelector('.nav-button');
-            this.e_main = document.querySelector('main');
-            console.log(this.e_btn)
-/*
-            this.e_btn.addEventListener('click', ()=>{
-                this.e_main.classList.toggle('is-opened');
-            })*/
-        }
+class DW_Controller
+{
+    constructor()
+    {
+        // Ici, le DOM n'est pas encore prêt
+        // Pour le moment, rien à faire.
     }
-    burgerMenu.init();
 
+    run()
+    {
+        // Ici, le DOM est prêt.
+    }
+}
+
+window.dw = new DW_Controller();
+window.addEventListener('load', () => window.dw.run());
 /*
 
 const menu = document.querySelector(".menu");

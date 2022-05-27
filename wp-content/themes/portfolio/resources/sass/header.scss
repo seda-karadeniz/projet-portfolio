@@ -96,6 +96,7 @@ label.labelMenu, #toggle
     //align-items: self-end;
 
 
+
     transform: translateX(100%);
     transition: .5s ease;
     //z-index: 1;
@@ -108,6 +109,7 @@ label.labelMenu, #toggle
       padding-top: 3rem;
       // padding-left: 25px;
       padding-right: 2.5rem;
+      //z-index: 6;
     }
 
     &__link{
@@ -115,11 +117,14 @@ label.labelMenu, #toggle
       color: white;
       text-decoration: none;
       font-size: $txt_font_size;
+      z-index: 4;
     }
 
   }
   .nav{
+
     padding-left: 4rem;
+    z-index: 999;
   }
 
   #menuToggle span
@@ -133,7 +138,7 @@ label.labelMenu, #toggle
     background: $txt_color;
     border-radius: 3px;
 
-    //z-index: 1;
+    z-index: 1;
     transform-origin: center;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -178,10 +183,12 @@ label.labelMenu, #toggle
 
   #menu
   {
+
     transform-origin: 0% 0%;
     transform: translate(100%, 20%);
 
     transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
+
   }
 
   #menuToggle input:checked ~ ul
@@ -192,11 +199,15 @@ label.labelMenu, #toggle
     min-height: 100vh;
 
       border: pink solid 1px;
-      box-shadow: #FFAFBD 0px 0px 5px 0px;
+      box-shadow: $borderShadow;
       padding-top: 4rem;
       padding-left: 1rem;
 
 
+
+  }
+  #menuToggle input[type="checkbox"]:not(:checked) ~ ul{
+    display: none;
   }
 
 }
@@ -234,7 +245,7 @@ label.labelMenu, #toggle
         border: pink solid 1px;
         padding: 2rem;
 
-        box-shadow: #FFAFBD 0px 0px 5px 0px;
+        box-shadow: $borderShadow;
       }
     }
     &__toggle input{

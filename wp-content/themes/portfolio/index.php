@@ -2,9 +2,46 @@
 
     <main class="layout main" itemscope itemtype="https://schema.org/person">
         <section class="introduction">
-            <h2 class="introduction__title title" itemprop="name">Seda Karadeniz</h2>
-            <p class="introduction__para" itemprop="jobTitle">Web development & Web design</p>
-            <a href="a-propos" class="introduction__btn btn">&Agrave; propos de moi</a>
+            <div class="introduction__rect">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1387" height="447" viewBox="0 0 1387 447">
+                    <defs>
+                        <filter id="Rectangle_20" x="0" y="0" width="1072" height="447" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="8" result="blur"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
+                        <filter id="Rectangle_26" x="356" y="46" width="1031" height="361" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="8" result="blur-2"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur-2"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
+                    </defs>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_20)">
+                        <g id="Rectangle_20-2" data-name="Rectangle 20" transform="translate(9 9)" fill="none" stroke="#ffafbd" stroke-width="2">
+                            <rect width="1054" height="429" stroke="none"/>
+                            <rect x="0.5" y="0.5" width="1053" height="428" fill="none"/>
+                        </g>
+                    </g>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_26)">
+                        <g id="Rectangle_26-2" data-name="Rectangle 26" transform="translate(365 55)" fill="none" stroke="#ffafbd" stroke-width="2">
+                            <rect width="1013" height="343" stroke="none"/>
+                            <rect x="0.5" y="0.5" width="1012" height="342" fill="none"/>
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
+            <div class="introduction__info">
+                <h2 class="introduction__title title" itemprop="name">Seda Karadeniz</h2>
+                <p class="introduction__para" itemprop="jobTitle">Web development & Web design</p>
+                <a href="a-propos" class="introduction__btn btn"><span>--</span>&Agrave; propos de moi<span>--</span></a>
+
+            </div>
+
             <div class="introduction__rs">
                 <!-- dribbble-->
                 <a href="https://dribbble.com/sedaKaradeniz" itemprop="sameAs">
@@ -38,7 +75,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="arrow">
+            <div class="introduction__arrow">
                 <!--ARROW DOWN-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="29.227" height="28" viewBox="0 0 29.227 28">
                     <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(-5.387 -6)">
@@ -58,7 +95,7 @@
                     include(__DIR__ . '/partials/project.php');
                 endwhile;endif;?>
             </div>
-            <a href="projets" class="projects__btn btn">Voir plus de projets</a>
+            <a href="projets" class="projects__btn btn"><span>--</span>Voir plus de projets<span>--</span></a>
         </section>
 
     </main>

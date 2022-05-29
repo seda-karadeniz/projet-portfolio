@@ -12,5 +12,5 @@
             </div>
         </section>
     </footer>
-</body>
+    </body>
 </html>

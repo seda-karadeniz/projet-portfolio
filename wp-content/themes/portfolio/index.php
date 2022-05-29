@@ -101,12 +101,14 @@
 
         <section class="projects" id="projects">
             <h2 class="projects__title title"> Quelques projets</h2>
-            <div class="projects__wrapper">
-                <?php
-                if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();
-                    include(__DIR__ . '/partials/project.php');
-                endwhile;endif;?>
-            </div>
+                <div class="projects__wrapper">
+                    <?php
+                    if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();
+                        include(__DIR__ . '/partials/project.php');
+                    endwhile;endif;?>
+                </div>
+
+
             <a href="projets" class="projects__btn btn"><span>--</span>Voir plus de projets<span>--</span></a>
         </section>
 

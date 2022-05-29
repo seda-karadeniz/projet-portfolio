@@ -39,6 +39,9 @@ html{
 .subTitle{
   font-size: $subTitle_font_size_mobile;
 }
+p{
+  font-size: $txt_font_size_mobile;
+}
 
 //deco btn
 a.btn{
@@ -112,12 +115,71 @@ a.btn{
   }
 }
 
+
+// ** projects
+
+.projects__wrapper{
+  margin-left: -4rem;
+  margin-right: -4rem;
+  display: grid;
+  grid-template-columns: 1fr;//repeat(2,calc(100vw/2));
+  overflow: hidden;
+
+
+}
+.project{
+  &__thumb{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  &__card figure{
+    height: 500px;
+    width: 100vw;
+  }
+  &__label{
+    padding-left: 2rem;
+    margin-top: -10rem;
+    background-color: hsla(0,0%,0%,0.60);
+    position: relative;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__link{
+    text-decoration: none;
+    color: white;
+  }
+  &__small-desc{
+  margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}
+.arrow-left{
+  margin-top: -50px;
+  align-self: end;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+.arrow-left svg{
+  width: 20px;
+  height: auto;
+}
+
+
+
 @media (min-width: 551px){
   .title{
     font-size: $title_font_size;
   }
   .subTitle{
     font-size: $subTitle_font_size;
+  }
+  p{
+    font-size: $txt_font_size;
   }
 
 
@@ -146,6 +208,30 @@ a.btn{
     }
   }
 }
+
+@media (min-width: 700px) {
+  .projects__wrapper{
+    grid-template-columns: repeat(2,calc(100vw/2));
+
+  }
+  .project{
+    &__card figure{
+      width: calc(100vw/2);
+    }
+  }
+}
+
+// projects
+
+/*.projects {
+
+  &__wrapper{
+    margin-left: -4rem;
+    display: grid;
+    grid-template-columns: repeat(2,calc(100vw/2));
+
+  }
+}*/
 
 
 

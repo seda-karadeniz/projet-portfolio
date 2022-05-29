@@ -153,21 +153,22 @@ a.btn{
     color: white;
   }
   &__small-desc{
-  margin-top: 1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+  }
+  &__arrow-left{
+    margin-top: -50px;
+    align-self: end;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  &__arrow-left svg{
+    width: 20px;
+    height: auto;
   }
 
 }
-.arrow-left{
-  margin-top: -50px;
-  align-self: end;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
-}
-.arrow-left svg{
-  width: 20px;
-  height: auto;
-}
+
 
 
 
@@ -218,20 +219,45 @@ a.btn{
     &__card figure{
       width: calc(100vw/2);
     }
+    &__label{
+      display: none;
+    }
+  }
+  .arrow-left{
+    display: none;
+  }
+  .project:hover{
+    .project__label{
+      padding-left: 2rem;
+      margin-top: -10rem;
+      background-color: hsla(0,0%,0%,0.60);
+      position: relative;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .project__link{
+      text-decoration: none;
+      color: white;
+    }
+    .project__small-desc{
+      margin-top: 1rem;
+      margin-bottom: 3.5rem;
+    }
+    .project__arrow-left{
+      margin-top: -50px;
+      align-self: end;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+    }
+    .project__arrow-left svg{
+      width: 20px;
+      height: auto;
+    }
   }
 }
 
-// projects
-
-/*.projects {
-
-  &__wrapper{
-    margin-left: -4rem;
-    display: grid;
-    grid-template-columns: repeat(2,calc(100vw/2));
-
-  }
-}*/
 
 
 

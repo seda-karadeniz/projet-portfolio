@@ -1,0 +1,136 @@
+main .contact{
+  padding-right: 4rem;
+}
+.contact .title{
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+}
+.contact__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.num, .mail{
+  text-decoration: none;
+  color: $txt_color;
+  font-size: $txt_font_size_mobile;
+}
+.contact__rs svg, .contact__info-num svg, .contact__info-email svg{
+  height: 20px;
+  width: auto;
+}
+.contact__rs {
+  display: flex;
+  margin-top: 36px;
+}
+.contact__rs a{
+  margin-right: 20px;
+}
+.contact__info-num svg, .contact__info-email svg{
+  margin-right: 24px;
+}
+.contact__info-email{
+  margin-top: 24px;
+}
+.contact aside{
+  border: solid 1px $pink_color;
+  box-shadow: $borderShadow;
+  margin-left: -5rem;
+  padding: 10rem 0 10rem 5rem;
+  max-width: 400px;
+  min-width: 300px;
+  height: 400px;
+
+}
+.contact section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  div{
+
+    margin-right: 4rem;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    label{
+      font-size: $txt_font_size_mobile;
+    }
+    input:not([type=checkbox]), textarea{
+      border: 1px solid $pink_color;
+      background-color: $bg_color;
+      box-shadow: $borderShadow;
+      color: white;
+      min-height: 36px;
+      padding: 9px;
+    }
+    input:focus::placeholder, textarea:focus::placeholder {
+      color: grey;
+    }
+    input::placeholder, textarea::placeholder {
+      color: transparent;
+    }
+  }
+}
+p.form__error{
+  color: #b71111;
+  font-size: 14px;
+}
+p.message{
+  margin-bottom: 4rem;
+  text-align: center;
+}
+p.message-envoi{
+  margin-bottom: 9rem;
+}
+button{
+  background-color: $bg_color;
+  border: none;
+}
+button.btn{
+  display: flex;
+  color: $txt_color;
+  cursor: pointer;
+
+}
+button.btn:before,
+button.btn:after{
+  display: block;
+  content: "";
+  align-self: center;
+  width: 40px;
+  border-bottom: 1px solid pink;
+  box-shadow: $borderShadow;
+}
+button span{
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .num, .mail{
+    font-size: $txt_font_size;
+  }
+  .contact section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    div{
+      margin-left: 100px;
+      label{
+        font-size: $txt_font_size;
+      }
+
+    }
+  }
+  p.message-envoi{
+    margin-left: 4rem;
+  }
+}
+
+
+
+
+

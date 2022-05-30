@@ -3,36 +3,75 @@
     <main class="layout main" itemscope itemtype="https://schema.org/person">
         <section class="introduction">
             <div class="introduction__rect">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1387" height="447" viewBox="0 0 1387 447">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1355" height="443.5" viewBox="0 0 1355 443.5">
                     <defs>
-                        <filter id="Rectangle_20" x="0" y="0" width="1072" height="447" filterUnits="userSpaceOnUse">
+                        <filter id="Ligne_31" x="321" y="44" width="20" height="364" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
-                            <feGaussianBlur stdDeviation="8" result="blur"/>
+                            <feGaussianBlur stdDeviation="3" result="blur"/>
                             <feFlood flood-color="#ffafbd"/>
                             <feComposite operator="in" in2="blur"/>
                             <feComposite in="SourceGraphic"/>
                         </filter>
-                        <filter id="Rectangle_26" x="356" y="46" width="1031" height="361" filterUnits="userSpaceOnUse">
+                        <filter id="Ligne_32" x="322" y="387.5" width="1033" height="20" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
-                            <feGaussianBlur stdDeviation="8" result="blur-2"/>
+                            <feGaussianBlur stdDeviation="3" result="blur-2"/>
                             <feFlood flood-color="#ffafbd"/>
                             <feComposite operator="in" in2="blur-2"/>
                             <feComposite in="SourceGraphic"/>
                         </filter>
+                        <filter id="Ligne_33" x="322" y="44" width="1033" height="20" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="3" result="blur-3"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur-3"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
+                        <filter id="Ligne_31-2" x="1014" y="0" width="20" height="443.5" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="3" result="blur-4"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur-4"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
+                        <filter id="Ligne_32-2" x="0" y="0" width="1033" height="20" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="3" result="blur-5"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur-5"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
+                        <filter id="Ligne_33-2" x="0" y="423.5" width="1033" height="20" filterUnits="userSpaceOnUse">
+                            <feOffset input="SourceAlpha"/>
+                            <feGaussianBlur stdDeviation="3" result="blur-6"/>
+                            <feFlood flood-color="#ffafbd"/>
+                            <feComposite operator="in" in2="blur-6"/>
+                            <feComposite in="SourceGraphic"/>
+                        </filter>
                     </defs>
-                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_20)">
-                        <g id="Rectangle_20-2" data-name="Rectangle 20" transform="translate(9 9)" fill="none" stroke="#ffafbd" stroke-width="2">
-                            <rect width="1054" height="429" stroke="none"/>
-                            <rect x="0.5" y="0.5" width="1053" height="428" fill="none"/>
+                    <g id="Groupe_2" data-name="Groupe 2" transform="translate(12.5 -161)">
+                        <g transform="matrix(1, 0, 0, 1, -12.5, 161)" filter="url(#Ligne_31)">
+                            <line id="Ligne_31-3" data-name="Ligne 31" y2="346" transform="translate(331 53)" fill="none" stroke="#ffafbd" stroke-width="2"/>
+                        </g>
+                        <g transform="matrix(1, 0, 0, 1, -12.5, 161)" filter="url(#Ligne_32)">
+                            <line id="Ligne_32-3" data-name="Ligne 32" x1="1015" transform="translate(331 397.5)" fill="none" stroke="#ffafbd" stroke-width="2"/>
+                        </g>
+                        <g transform="matrix(1, 0, 0, 1, -12.5, 161)" filter="url(#Ligne_33)">
+                            <line id="Ligne_33-3" data-name="Ligne 33" x1="1015" transform="translate(331 54)" fill="none" stroke="#ffafbd" stroke-width="2"/>
                         </g>
                     </g>
-                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_26)">
-                        <g id="Rectangle_26-2" data-name="Rectangle 26" transform="translate(365 55)" fill="none" stroke="#ffafbd" stroke-width="2">
-                            <rect width="1013" height="343" stroke="none"/>
-                            <rect x="0.5" y="0.5" width="1012" height="342" fill="none"/>
+                    <g id="Groupe_3" data-name="Groupe 3" transform="translate(1342.5 568.5) rotate(180)">
+                        <g transform="matrix(-1, 0, 0, -1, 1342.5, 568.5)" filter="url(#Ligne_31-2)">
+                            <line id="Ligne_31-4" data-name="Ligne 31" y2="425.5" transform="translate(1024 434.5) rotate(180)" fill="none" stroke="#ffafbd" stroke-width="2"/>
+                        </g>
+                        <g transform="matrix(-1, 0, 0, -1, 1342.5, 568.5)" filter="url(#Ligne_32-2)">
+                            <line id="Ligne_32-4" data-name="Ligne 32" x1="1015" transform="translate(1024 10) rotate(180)" fill="none" stroke="#ffafbd" stroke-width="2"/>
+                        </g>
+                        <g transform="matrix(-1, 0, 0, -1, 1342.5, 568.5)" filter="url(#Ligne_33-2)">
+                            <line id="Ligne_33-4" data-name="Ligne 33" x1="1015" transform="translate(1024 433.5) rotate(180)" fill="none" stroke="#ffafbd" stroke-width="2"/>
                         </g>
                     </g>
                 </svg>
+
 
             </div>
 
@@ -87,20 +126,23 @@
 
 
             </div>
-            <div class="introduction__arrow">
-                <!--ARROW DOWN-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="29.227" height="28" viewBox="0 0 29.227 28">
-                    <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(-5.387 -6)">
-                        <path id="Tracé_4" data-name="Tracé 4" d="M18,7.5v25" transform="translate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        <path id="Tracé_5" data-name="Tracé 5" d="M32.5,18,20,28.5,7.5,18" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                    </g>
-                </svg>
+            <a href="#scroll">
+                <div class="introduction__arrow">
+                    <!--ARROW DOWN-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.227" height="28" viewBox="0 0 29.227 28">
+                        <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(-5.387 -6)">
+                            <path id="Tracé_4" data-name="Tracé 4" d="M18,7.5v25" transform="translate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                            <path id="Tracé_5" data-name="Tracé 5" d="M32.5,18,20,28.5,7.5,18" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                        </g>
+                    </svg>
 
-            </div>
+                </div>
+            </a>
+
         </section>
 
         <section class="projects" id="projects">
-            <h2 class="projects__title title"> Quelques projets</h2>
+            <h2 class="projects__title title" id="scroll"> Quelques projets</h2>
                 <div class="projects__wrapper">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();

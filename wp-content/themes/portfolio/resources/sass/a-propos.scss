@@ -7,10 +7,12 @@
   max-width: 50rem;
   min-width: 40rem;
   line-height: 2.4rem;
+  //margin-left: 4rem;
 }
 .about__wrapper{
   display: grid;
   grid-template-columns: 1fr;
+  margin-left: 4rem;
 
   row-gap: 8rem;
 }
@@ -28,6 +30,8 @@
 .about__projects-btn{
   margin-top: 6rem;
   margin-bottom: 9.8rem;
+
+  margin-left: 4rem;
 }
 @media (min-width: 800px) {
   .about__wrapper{

@@ -1,78 +1,10 @@
-/*
 
-nav {
-  display: flex;
-  align-items: self-start;
-  justify-content: space-between;
-  margin-top: 3rem;
-  margin-left: 4rem;
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
 
-  ul li {
-    margin-right:3rem;
-    margin-top: 1rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    a{
-      font-size: $txt_font_size;
-      color: $txt_color;
-    }
-  }
-}
-
-label.labelMenu, #toggle
-{
-  display: none;
-}
-
-@media (max-width: 991px)
-{
-  nav
-  {
-    height: 60px;
-  }
-
-  .menu
-  {
-    display: none;
-    flex-direction: column;
-    height: 220px;
-  }
-  nav .menu a {
-    width: 50%;
-  }
-
-  label.labelMenu
-  {
-    width: 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: self-end;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-  }
-
-  #toggle:checked + .menu {
-    display: flex;
-  }
-
+a:hover, a:focus{
+  color: $pink_color;
 
 }
-*/
 
-
-
- /* #menuToggle{
-    position: relative;
-  }*/
 
 @media (max-width: 550px){
   header{
@@ -86,15 +18,16 @@ label.labelMenu, #toggle
   .nav{
 
     position: absolute;
-    top: 4rem;
+    top: 4.5rem;
     left:0;
     right: 0;
     width: 50%; //70
-    display: flex;
+  /*  display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start;*/
     //align-items: self-end;
-
+    padding-left: 3rem;
+    z-index: 999;
 
 
     transform: translateX(100%);
@@ -121,11 +54,10 @@ label.labelMenu, #toggle
     }
 
   }
-  .nav{
+/*  .nav{
 
-    padding-left: 4rem;
-    z-index: 999;
-  }
+
+  }*/
 
   #menuToggle span
   {
@@ -254,4 +186,33 @@ label.labelMenu, #toggle
   }
 }
 
+.nav__item--current a{
+  text-decoration: $pink_color underline ;
+  text-underline-offset: 0.7rem;
+  color: $pink_color;
 
+}
+
+
+nav.nav li a {
+  display: inline-block;
+  position: relative;
+}
+
+nav.nav li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -0.7rem;
+  left: 0;
+  background-color: $pink_color;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav.nav li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

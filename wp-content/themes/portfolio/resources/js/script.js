@@ -10,6 +10,13 @@ class DW_Controller
 
     run()
     {
+        const a = document.querySelectorAll('nav a');
+        for (const aElement of a) {
+            aElement.addEventListener('click', ()=>{
+               aElement.classList.toggle('selected');
+            })
+
+        }
 
     }
 }

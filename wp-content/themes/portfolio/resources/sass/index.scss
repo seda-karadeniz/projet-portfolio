@@ -8,6 +8,7 @@ $txt_font_size_mobile : 1.6rem;
 $title_font_size_mobile : 3.6rem;
 $subTitle_font_size_mobile : 2.4rem;
 $borderShadow: #FFAFBD 0px 0px 5px 0px;
+$footerColor :#707070;
 
 
 * {
@@ -78,7 +79,7 @@ section.introduction div:not(.introduction__rs) {
 }
 
 a.btn{
-  font-size: $txt_font_size;
+  font-size: $txt_font_size_mobile;
   text-decoration: none;
   color: $txt_color;
 }
@@ -110,23 +111,28 @@ a.btn{
     display: flex;
     margin-top: 120px;
   }
-  &__rs span{
+  &__rs a{
     margin-right: 20px;
   }
 }
 
 
 // ** projects
-
-.projects__wrapper{
-  margin-left: -4rem;
-  margin-right: -4rem;
-  display: grid;
-  grid-template-columns: 1fr;//repeat(2,calc(100vw/2));
-  overflow: hidden;
-
-
+.projects{
+  &__title{
+    margin-top: 0px;
+    margin-bottom: 12rem;
+    text-align: center;
+  }
+  &__wrapper{
+    margin-left: -4rem;
+    margin-right: -4rem;
+    display: grid;
+    grid-template-columns: 1fr;//repeat(2,calc(100vw/2));
+    overflow: hidden;
+  }
 }
+
 .project{
   &__thumb{
     width:100% ;
@@ -171,7 +177,6 @@ a.btn{
 
 
 
-
 @media (min-width: 551px){
   .title{
     font-size: $title_font_size;
@@ -179,15 +184,17 @@ a.btn{
   .subTitle{
     font-size: $subTitle_font_size;
   }
-  p{
+  p, a.btn{
     font-size: $txt_font_size;
   }
+
 
 
   .introduction{
     &__para{
       margin-top: 3.5rem;
       margin-bottom: 3.5rem;
+      font-size: $txt_font_size;
 
     }
     &__title{
@@ -227,6 +234,7 @@ a.btn{
     display: none;
   }
   .project:hover{
+
     .project__label{
       padding-left: 2rem;
       margin-top: -10rem;
@@ -243,7 +251,7 @@ a.btn{
     }
     .project__small-desc{
       margin-top: 1rem;
-      margin-bottom: 3.5rem;
+      margin-bottom: 3.2rem;
     }
     .project__arrow-left{
       margin-top: -50px;
@@ -256,6 +264,13 @@ a.btn{
       height: auto;
     }
   }
+
+}
+section.projects a.projects__btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
 }
 
 

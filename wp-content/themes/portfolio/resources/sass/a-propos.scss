@@ -1,0 +1,43 @@
+.about .title{
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.about__content{
+  max-width: 50rem;
+  min-width: 40rem;
+  line-height: 2.4rem;
+}
+.about__wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  row-gap: 8rem;
+}
+
+.about__thumb{
+  width:100% ;
+  height: 100%;
+  object-fit: cover;
+
+}
+.about__image{
+  height: 600px;
+  width: 500px;
+}
+.about__projects-btn{
+  margin-top: 6rem;
+  margin-bottom: 9.8rem;
+}
+@media (min-width: 800px) {
+  .about__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 12rem;
+  }
+  .about__content{
+    line-height: 2.7rem;
+  }
+
+}
+

@@ -2,7 +2,8 @@
         <section class="footer__body">
             <h2 class="hidden">Footer</h2>
             <div class="footer__contact">
-                <p class="footer__contact-para">Ne soyez pas timide, <a href="contact" class="footer__contact-btn">contactez-moi</a></p>
+                <p class="footer__contact-para">Ne soyez pas timide,</p>
+                <a href="contact" class="footer__contact-btn btn"><span>--</span>Contactez-moi<span>--</span></a>
             </div>
             <div class="footer__rs">
                 <a href="https://github.com/seda-karadeniz">Github</a>

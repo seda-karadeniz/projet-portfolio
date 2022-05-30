@@ -47,6 +47,7 @@
     <nav class="header__nav nav" role="navigation">
         <h2 class="nav__title hidden">Navigation principale</h2>
         <div id="menuToggle" class="nav__toggle">
+
             <input type="checkbox" />
             <span></span>
             <span></span>

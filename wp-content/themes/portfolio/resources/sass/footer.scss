@@ -1,0 +1,47 @@
+.footer{
+  background-color: $footerColor;
+  margin-left: -4rem;
+  margin-right: -4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  &__body{
+   /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    */
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__contact {
+    margin-bottom: 3.6rem;
+  }
+  &__contact-para{
+    font-size: $subTitle_font_size_mobile;
+  }
+  &__contact-btn{
+    margin-top: 2.4rem;
+  }
+  &__rs a+a {
+    margin-left: 3.6rem;
+  }
+  &__rs a{
+    font-size: $txt_font_size_mobile;
+    color: $txt_color;
+    text-decoration: none;
+  }
+
+}
+@media (max-width: 551px) {
+  .footer{
+
+    &__contact-para{
+      font-size: $subTitle_font_size;
+    }
+    &__rs a {
+      font-size: $txt_font_size;
+    }
+  }
+}

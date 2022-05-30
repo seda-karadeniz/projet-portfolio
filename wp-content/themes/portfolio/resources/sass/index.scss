@@ -282,8 +282,8 @@ section.projects a.projects__btn{
 .js-animation{
   transform: translate(-100%,80%);
   opacity: 0;
-  transition: transform 1.5s ease-in-out,
-  opacity 2s ease-in-out;
+  transition: transform 1s ease-out,
+  opacity 3s ease-in-out;
 }
 .js-animation.active{
   transform: translate(0%);

@@ -142,7 +142,7 @@
         </section>
 
         <section class="projects" id="projects">
-            <h2 class="projects__title title" id="scroll"> Quelques projets</h2>
+            <h3 class="projects__title title" id="scroll"> Quelques projets</h3>
                 <div class="projects__wrapper">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();

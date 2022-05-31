@@ -4,6 +4,7 @@
     <main class="layout projects">
         <h2 class="templateProjects__title title"> <?= get_the_title(); ?></h2>
         <section class="projects" id="projects">
+            <h3 class="hidden">Mes projets</h3>
             <div class="projects__wrapper">
                 <?php
                 if(($projects = dw_get_projects())->have_posts()): while($projects->have_posts()): $projects->the_post();

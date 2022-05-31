@@ -280,13 +280,13 @@ section.projects a.projects__btn{
 
 
 .js-animation{
-  transform: translate(-100%,80%);
+  transform: translateX(-100%);
   opacity: 0;
   transition: transform 1s ease-out,
-  opacity 3s ease-in-out;
+  opacity 1s ease-in-out;
 }
 .js-animation.active{
-  transform: translate(0%);
+  transform: translateX(0%);
   opacity: 1;
 }
 

@@ -5,6 +5,7 @@
         <h2 class="contact__title title"><?= get_the_title(); ?></h2>
         <div class="contact__grid">
             <aside class="contact__info">
+                <h3 class="hidden">Mes Informations</h3>
                 <div class="contact__info-num">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="27.05" viewBox="0 0 27.001 27.05">
                         <path id="Icon_feather-phone" data-name="Icon feather-phone" d="M27.167,21v3.62a2.413,2.413,0,0,1-2.631,2.413,23.881,23.881,0,0,1-10.414-3.7,23.531,23.531,0,0,1-7.24-7.24,23.881,23.881,0,0,1-3.7-10.462A2.413,2.413,0,0,1,5.579,3H9.2a2.413,2.413,0,0,1,2.413,2.076,15.494,15.494,0,0,0,.845,3.391,2.413,2.413,0,0,1-.543,2.546l-1.533,1.533a19.307,19.307,0,0,0,7.24,7.24l1.533-1.533A2.413,2.413,0,0,1,21.7,17.71a15.494,15.494,0,0,0,3.391.845A2.413,2.413,0,0,1,27.167,21Z" transform="translate(-1.667 -1.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
@@ -69,6 +70,7 @@
             </aside>
 
             <section>
+                <h3 class="hidden"> Formulaire de contact</h3>
                 <?php if(! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
                     <form action="<?= get_home_url(); ?>/wp-admin/admin-post.php" method="POST" class="contact__form form" id="contact">
                         <?php if(isset($_SESSION['contact_form_feedback'])) : ?>

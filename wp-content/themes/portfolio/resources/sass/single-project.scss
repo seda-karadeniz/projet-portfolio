@@ -21,7 +21,7 @@ main.singleProject{
 }
 .singleProject__thumb {
   width: 100%;
-  height: 500px;
+  height: 50rem;
   object-fit: cover;
   object-position: center;
 }
@@ -36,7 +36,7 @@ main.singleProject{
   width: 500px;
 }*/
 .singleProject__content .singleProject__tech{
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 .singleProject__project-btn{
   margin-top: 6rem;
@@ -48,18 +48,18 @@ main.singleProject{
 .singleProject__img{
   margin-top: 9.8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-row-gap: 6rem;
   grid-column-gap: 6rem;
 
 }
 .singleProject__img figure{
-  width: 300px;
+  width: 30rem;
 
 }
 figure .attachment-medium{
   width: 100%;
-  height: 300px;
+  height: 30rem;
   object-fit: cover;
   object-position: center;
 }

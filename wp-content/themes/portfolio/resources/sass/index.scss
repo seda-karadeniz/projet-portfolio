@@ -58,7 +58,7 @@ a.btn:after{
   display: block;
   content: "";
   align-self: center;
-  width: 40px;
+  width: 4rem;
   border-bottom: 1px solid pink;
   box-shadow: $borderShadow;
 }
@@ -95,8 +95,8 @@ a.btn{
 
   &__rect svg{
     position: absolute;
-    top: -70px;
-    width: 800px;
+    top: -7rem;
+    width: 80rem;
     height: auto;
     z-index: -9999;
 
@@ -109,15 +109,15 @@ a.btn{
 
   }
   &__rs svg{
-    height: 20px;
+    height: 2rem;
     width: auto;
   }
   &__rs {
     display: flex;
-    margin-top: 120px;
+    margin-top: 12rem;
   }
   &__rs a{
-    margin-right: 20px;
+    margin-right: 2rem;
   }
 }
 
@@ -146,7 +146,7 @@ a.btn{
 
   }
   &__card figure{
-    height: 500px;
+    height: 50rem;
     width: 100vw;
   }
   &__label{
@@ -168,13 +168,13 @@ a.btn{
     margin-bottom: 2rem;
   }
   &__arrow-left{
-    margin-top: -50px;
+    margin-top: -5rem;
     align-self: end;
     margin-bottom: 2rem;
     margin-right: 2rem;
   }
   &__arrow-left svg{
-    width: 20px;
+    width: 2rem;
     height: auto;
   }
 
@@ -202,21 +202,21 @@ a.btn{
 
     }
     &__title{
-      margin-top: 40px;
+      margin-top: 4rem;
     }
     &__rect svg{
-      width: 1300px;
+      width: 130rem;
       height: auto;
     }
     &__para{
       font-size: $subTitle_font_size;
     }
     &__rs svg{
-      height: 30px;
+      height: 3rem;
       width: auto;
     }
     &__rs {
-      margin-top: 250px;
+      margin-top: 25rem;
     }
   }
 }
@@ -259,13 +259,13 @@ a.btn{
       margin-bottom: 3.2rem;
     }
     .project__arrow-left{
-      margin-top: -50px;
+      margin-top: -5rem;
       align-self: end;
       margin-bottom: 2rem;
       margin-right: 2rem;
     }
     .project__arrow-left svg{
-      width: 20px;
+      width: 2rem;
       height: auto;
     }
   }
@@ -292,20 +292,20 @@ section.projects a.projects__btn{
 
 
 .introduction__arrow {
-  -webkit-animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 1s  alternate;
   animation: mover 1s infinite  alternate;
 }
 .introduction__arrow{
-  -webkit-animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 1s  alternate;
   animation: mover 1s infinite  alternate;
 }
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  100% { transform: translateY(-1rem); }
 }
 @keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  100% { transform: translateY(-1rem); }
 }
 
 

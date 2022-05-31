@@ -15,43 +15,43 @@ main .contact{
   font-size: $txt_font_size_mobile;
 }
 .contact__rs svg, .contact__info-num svg, .contact__info-email svg{
-  height: 20px;
+  height: 2rem;
   width: auto;
 }
 .contact__rs {
   display: flex;
-  margin-top: 36px;
+  margin-top: 3.6rem;
 }
 .contact__rs a{
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .contact__info-num svg, .contact__info-email svg{
-  margin-right: 24px;
+  margin-right: 2.4rem;
 }
 .contact__info-email{
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 .contact aside{
   border: solid 1px $pink_color;
   box-shadow: $borderShadow;
   margin-left: -5rem;
   padding: 10rem 0 10rem 5rem;
-  max-width: 400px;
-  min-width: 300px;
-  height: 400px;
+  max-width: 40rem;
+  min-width: 30rem;
+  height: 40rem;
 
 }
 .contact section{
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 10rem;
   div{
 
     margin-right: 4rem;
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 1.6rem;
     label{
       font-size: $txt_font_size_mobile;
     }
@@ -60,8 +60,8 @@ main .contact{
       background-color: $bg_color;
       box-shadow: $borderShadow;
       color: white;
-      min-height: 36px;
-      padding: 9px;
+      min-height: 3.6rem;
+      padding: 0.9rem;
     }
     input:focus::placeholder, textarea:focus::placeholder {
       color: grey;
@@ -73,7 +73,7 @@ main .contact{
 }
 p.form__error{
   color: #b71111;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 p.message{
   margin-bottom: 4rem;
@@ -97,7 +97,7 @@ button.btn:after{
   display: block;
   content: "";
   align-self: center;
-  width: 40px;
+  width: 4rem;
   border-bottom: 1px solid pink;
   box-shadow: $borderShadow;
 }
@@ -118,7 +118,7 @@ button span{
     flex-direction: column;
     margin-top: 0;
     div{
-      margin-left: 100px;
+      margin-left: 10rem;
       label{
         font-size: $txt_font_size;
       }

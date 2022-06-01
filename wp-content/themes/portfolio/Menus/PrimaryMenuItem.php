@@ -1,5 +1,6 @@
 <?php
 
+
 class PrimaryMenuItem
 {
     protected $post;
@@ -7,7 +8,6 @@ class PrimaryMenuItem
     public $url;
     public $label;
     public $title;
-    public $subitems = [];
 
     public function __construct($post)
     {
@@ -18,51 +18,29 @@ class PrimaryMenuItem
         $this->title = $post->attr_title;
     }
 
-    public function hasSubItems()
-    {
-        return ! empty($this->subitems);
-    }
 
-    public function isSubItem()
-    {
-        return boolval($this->getParentId());
-    }
 
-    public function getParentId()
-    {
-        return $this->post->menu_item_parent;
-    }
-
-    public function isParentFor(PrimaryMenuItem $instance)
-    {
-        return ($this->post->ID == $instance->getParentId());
-    }
-
-    public function addSubItem(PrimaryMenuItem $instance)
-    {
-        $this->subitems[] = $instance;
-    }
 
     public function getBemClasses($base)
     {
         $icon = get_field('icon', $this->post);
         $modifiers = [];
 
-        if($this->isCurrent()) {
+        if ($this->isCurrent()) {
             $modifiers[] = 'current';
         }
 
-        if($this->post->type === 'custom') {
+        if ($this->post->type === 'custom') {
             $modifiers[] = 'url';
         }
 
-        if($icon) {
+        if ($icon) {
             $modifiers[] = $icon;
         }
 
         $value = $base;
 
-        foreach($modifiers as $modifier) {
+        foreach ($modifiers as $modifier) {
             $value .= ' ' . $base . '--' . $modifier;
         }
 

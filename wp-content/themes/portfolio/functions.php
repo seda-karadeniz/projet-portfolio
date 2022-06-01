@@ -254,7 +254,7 @@ add_action('admin_post_submit_contact_form', 'dw_handle_submit_contact_form');
 
 function dw_handle_submit_contact_form()
 {
-    // Instancier le controlleur du form
+
     $form = new ContactFormController($_POST);
 }
 

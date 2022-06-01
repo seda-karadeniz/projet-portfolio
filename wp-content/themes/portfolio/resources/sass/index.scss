@@ -23,7 +23,9 @@ html{
   scroll-behavior: smooth;
   font-family: Calibre,sans-serif;
   max-width: 100vw;
+
 }
+
 
 .hidden{
     position: absolute;
@@ -93,19 +95,51 @@ a.btn{
 }
 .introduction{
 
-  &__rect svg{
+  &__title{
+    text-align: center;
+  }
+/*  &__rect{
+    width: 100vw;
+    height: 800px;
     position: absolute;
     top: -7rem;
-    width: 80rem;
+    z-index: -9999;
+  }
+ &__rect svg{
+
+    width: 100%;
     height: auto;
     z-index: -9999;
+   top: -7rem;
 
+  }*/
+  &__rect{
+    width: 100vw;
+    height: 400px;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    overflow: hidden;
+    position: absolute;
+    top: -14rem;
+
+    z-index: -9999;
+
+    svg{
+      max-width: 80rem;
+      height: auto;
+      //position: absolute;
+      /*position: absolute;
+      bottom: 20px;*/
+
+    }
   }
+
+
   &__para{
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: $subTitle_font_size_mobile;
-    //text-align: center;
+    text-align: center;
 
   }
   &__rs svg{
@@ -204,10 +238,29 @@ a.btn{
     &__title{
       margin-top: 4rem;
     }
-    &__rect svg{
-      width: 130rem;
-      height: auto;
+    &__rect{
+      //width: 100vw;
+      //height: 400px;
+      margin-left: -4rem;
+
+      top: -10rem;
+
+      z-index: -9999;
+
+      svg{
+        min-width: 130rem;
+        height: auto;
+        //position: absolute;
+        /*position: absolute;
+        bottom: 20px;*/
+
+      }
     }
+    /*&__rect svg{
+      width: 130rem;
+
+      height: auto;
+    }*/
     &__para{
       font-size: $subTitle_font_size;
     }
@@ -223,6 +276,7 @@ a.btn{
 
 
 @media (min-width: 700px) {
+
   .projects__wrapper{
     grid-template-columns: repeat(2,calc(100vw/2));
 
@@ -269,7 +323,6 @@ a.btn{
       height: auto;
     }
   }
-
 }
 section.projects a.projects__btn{
   display: flex;

@@ -45,3 +45,13 @@
     }
   }
 }
+
+@media (max-width: 390px) {
+  p.footer__contact-para{
+    font-size: 20px;
+  }
+  .footer__rs a{
+    font-size: $txt_font_size_mobile;
+  }
+
+}

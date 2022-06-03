@@ -23,13 +23,7 @@
                             <rect x="1" y="1" width="33" height="33" fill="none"/>
                         </g>
                     </g>
-                    <animateTransform attributeName="transform"
-                                      attributeType="XML"
-                                      type="rotate"
-                                      from="0"
-                                      to="360"
-                                      dur="10s"
-                                      repeatCount="2"/>
+
                 </svg>
 
             </div>

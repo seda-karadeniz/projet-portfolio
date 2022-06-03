@@ -11,25 +11,26 @@ class DW_Controller
     run()
     {
 
+
+
         const svg = document.querySelector(".introduction__rect svg");
         const lines = svg.querySelectorAll('.introduction__rect svg line');
         const divProjects = document.querySelector('.projects__wrapper');
 
+            for (const line of lines) {
+                const length = line.getTotalLength();
+                line.style.transition = 'none';
+                line.style.strokeDasharray = `${length} ${length}`;
+                line.style.strokeDashoffset = length;
+                line.getBoundingClientRect();
+                line.style.transition = 'stroke-dashoffset 5s ease';
+                line.style.strokeDashoffset = 0;
 
-        for (const line of lines) {
-            const length = line.getTotalLength();
-            line.style.transition = 'none';
-            line.style.strokeDasharray = `${length} ${length}`;
-            line.style.strokeDashoffset = length;
-            line.getBoundingClientRect();
-            line.style.transition = 'stroke-dashoffset 5s ease';
-            line.style.strokeDashoffset = 0;
+            }
 
-        }
-
-       /* document.addEventListener("scroll", () => {
+       /*document.addEventListener("scroll", () => {
             if (window.scrollY + window.innerHeight <= window.innerHeight) {
-                divProjects.classList.add('js-animation');
+
 
 
 

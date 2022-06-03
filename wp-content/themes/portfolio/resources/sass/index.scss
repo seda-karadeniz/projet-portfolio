@@ -361,4 +361,46 @@ section.projects a.projects__btn{
   100% { transform: translateY(-1rem); }
 }
 
+@media (max-width: 390px) {
+
+  .title{
+    font-size:3.2rem ;
+    line-height: 150%;
+  }
+  .subTitle{
+    font-size: 2rem;
+  }
+
+  .introduction__rs {
+    margin-top: 2rem;
+  }
+  /*.introduction__btn{
+    margin-top: 30px;
+  }*/
+  .introduction__rect svg {
+    max-width: 50rem;
+    //height: auto;
+  }
+  .introduction__rect{
+    top: -20rem;
+  }
+  section.introduction{
+    margin-top: 14rem;
+  }
+  .introduction .title{
+    margin-top: -4.5rem;
+  }
+  .introduction .introduction__para{
+    margin-top: 5rem;
+  }
+  .introduction .introduction__arrow{
+    margin-top: 5rem;
+  }
+
+
+
+
+
+}
+
 

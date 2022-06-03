@@ -126,7 +126,7 @@
 
 
             </div>
-            <a href="#scroll">
+            <a href="#projets">
                 <div class="introduction__arrow">
                     <!--ARROW DOWN-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="29.227" height="28" viewBox="0 0 29.227 28">
@@ -142,7 +142,7 @@
         </section>
 
         <section class="projects" id="projects">
-            <h3 class="projects__title title" id="scroll"> Quelques projets</h3>
+            <h3 class="projects__title title" id="projets"> Quelques projets</h3>
                 <div class="projects__wrapper">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();

@@ -1,3 +1,5 @@
+import {Carousel, Fancybox} from "@fancyapps/ui";
+
 class DW_Controller
 {
 
@@ -45,6 +47,7 @@ class DW_Controller
 
             }
         })
+
 
 
     }

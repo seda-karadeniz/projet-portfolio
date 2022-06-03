@@ -173,9 +173,11 @@ a:hover, a:focus{
       //margin-top: 1rem;
 
       &:last-child {
-        margin-right: 2rem;
+
         border: pink solid 1px;
         padding: 2rem;
+        margin-right: 2rem;
+
 
         box-shadow: $borderShadow;
       }

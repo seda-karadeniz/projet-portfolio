@@ -126,23 +126,25 @@
 
 
             </div>
-            <a href="#projets">
-                <div class="introduction__arrow">
-                    <!--ARROW DOWN-->
+
+            <div class="introduction__arrow">
+                <!--ARROW DOWN-->
+                <a href="#projets">
                     <svg xmlns="http://www.w3.org/2000/svg" width="29.227" height="28" viewBox="0 0 29.227 28">
                         <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(-5.387 -6)">
                             <path id="Tracé_4" data-name="Tracé 4" d="M18,7.5v25" transform="translate(2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
                             <path id="Tracé_5" data-name="Tracé 5" d="M32.5,18,20,28.5,7.5,18" transform="translate(0 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
                         </g>
                     </svg>
+                </a>
 
-                </div>
-            </a>
+            </div>
+
 
         </section>
 
-        <section class="projects" id="projects">
-            <h3 class="projects__title title" id="projets"> Quelques projets</h3>
+        <section class="projects">
+            <h3 class="projects__title title"  id="projets" > Quelques projets</h3>
                 <div class="projects__wrapper">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();

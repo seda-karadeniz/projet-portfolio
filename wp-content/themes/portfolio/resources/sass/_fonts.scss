@@ -1,8 +1,14 @@
 @font-face {
   font-family: "TAN - PEARL";
-  src: url("../fonts/TAN-PEARL.woff") format("woff");
+  src: url("./../fonts/TAN-PEARL.woff") format("woff");
+  src: url("./../fonts/TAN-PEARL.woff2") format("woff2");
+  src: url("./../fonts/TAN-PEARL.otf") format("otf");
+  src: url("./../fonts/TAN-PEARL.ttf") format("ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Calibre";
   src: url("../fonts/Calibre.woff") format("woff");
+  src: url("../fonts/Calibre.woff2") format("woff2");
+  font-display: swap;
 }

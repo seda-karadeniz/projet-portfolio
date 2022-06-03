@@ -1,6 +1,6 @@
-main.singleProject{
-  padding-right: 0;
-}
+/*main.singleProject{
+  //padding-right: 0;
+}*/
 .singleProject .title{
   //margin-top: 5rem;
   margin-bottom: 9rem;
@@ -53,10 +53,10 @@ main.singleProject{
   grid-column-gap: 6rem;
 
 }
-.singleProject__img figure{
+/*.singleProject__img figure{
   width: 30rem;
 
-}
+}*/
 figure .attachment-medium{
   width: 100%;
   height: 30rem;
@@ -64,10 +64,8 @@ figure .attachment-medium{
   object-position: center;
 }
 .singleProject__btn{
-  margin-top: 6rem;
-  margin-bottom: 9.8rem;
+  margin: 6rem auto 9.8rem;
 
-  margin-left: 4rem;
 }
 
 @media (min-width: 800px) {
@@ -84,7 +82,7 @@ figure .attachment-medium{
 
   }
   .singleProject__project-btn{
-    margin-left: 4rem;
+    margin: 10rem auto 0;
   }
   main.singleProject{
     padding-right: 4rem;
@@ -93,5 +91,8 @@ figure .attachment-medium{
     margin-left: 4rem;
 
   }
+}
+.btn-change-ML{
+  margin-right: -4rem;
 }
 

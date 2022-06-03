@@ -44,17 +44,24 @@
         <?php
         $url = get_field('url');
         if( $url ): ?>
+        <div class="btn-change-ML">
             <a class="singleProject__project-btn btn" href="<?php echo esc_url( $url ); ?>"><span>--</span>Voir le site<span>--</span></a>
+
+        </div>
+
+
         <?php endif; ?>
 
         <div class="singleProject__img">
             <figure class="singleProject__img1">
-                <?php
-                $image = get_field('image');
-                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-                if( $image ) {
-                    echo wp_get_attachment_image( $image, $size );
-                } ?>
+                    <?php
+                    $image = get_field('image');
+                    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+                    if( $image ) {
+                        echo wp_get_attachment_image( $image, $size );
+                    } ?>
+
+
             </figure>
 
             <figure class="singleProject__img2">
@@ -70,13 +77,13 @@
                 $image = get_field('image3');
                 $size = 'medium'; // (thumbnail, medium, large, full or custom size)
                 if( $image ) {
-                    echo wp_get_attachment_image( $image, $size );
+                    echo wp_get_attachment_image( $image, $size);
                 } ?>
             </figure>
         </div>
-
-        <a href="projets" class="singleProject__btn btn"><span>--</span>Retour vers la liste des projets<span>--</span></a>
-
+        <div class="btn-change-ML">
+            <a href="projets" class="singleProject__btn btn"><span>--</span>Retour vers la liste des projets<span>--</span></a>
+        </div>
     </main>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

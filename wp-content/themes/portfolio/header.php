@@ -24,7 +24,7 @@
 </head>
 <body>
 <header class="header">
-    <h1 class="header__title hidden"><?= get_bloginfo('name'); ?></h1>
+    <h1 class="header__title hidden" role="heading" aria-level="1" ><?= get_bloginfo('name'); ?></h1>
     <p class="header__tagline hidden"><?= get_bloginfo('description'); ?></p>
     <div class="logo" itemscope itemtype="http://schema.org/Brand">
         <a href="/projet-portfolio" itemprop="logo">
@@ -46,7 +46,7 @@
     </div>
 
     <nav class="header__nav nav" role="navigation">
-        <h2 class="nav__title hidden">Navigation principale</h2>
+        <h2 class="nav__title hidden" role="heading" aria-level="2" >Navigation principale</h2>
         <div id="menuToggle" class="nav__toggle">
 
             <input type="checkbox" />

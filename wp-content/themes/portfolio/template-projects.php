@@ -28,11 +28,11 @@
                 </svg>
 
             </div>
-            <h2 class="templateProjects__title title"> <?= get_the_title(); ?></h2>
+            <h2 class="templateProjects__title title" role="heading" aria-level="2" > <?= get_the_title(); ?></h2>
         </div>
 
         <section class="projects" id="projects">
-            <h3 class="hidden">Mes projets</h3>
+            <h3 class="hidden" role="heading" aria-level="3" >Mes projets</h3>
             <div class="projects__wrapper">
                 <?php
                 if(($projects = dw_get_projects())->have_posts()): while($projects->have_posts()): $projects->the_post();

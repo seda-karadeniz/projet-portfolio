@@ -28,7 +28,7 @@
                 </svg>
 
             </div>
-            <h2 class="about__title title">&Agrave; propos de moi</h2>
+            <h2 class="about__title title" role="heading" aria-level="2" >&Agrave; propos de moi</h2>
 
         </div>
         <div class="about__wrapper">
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <a href="projets" class="about__projects-btn btn"><span>--</span>Voir tous mes projets<span>--</span></a>
+        <a href="projets" class="about__projects-btn btn reveal"><span>--</span>Voir tous mes projets<span>--</span></a>
 
     </main>
     <?php endwhile; endif; ?>

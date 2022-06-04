@@ -17,7 +17,8 @@ class DW_Controller
 
         const svg = document.querySelector(".introduction__rect svg");
         const lines = svg.querySelectorAll('.introduction__rect svg line');
-        const divProjects = document.querySelector('.projects__wrapper');
+        //const divProjects = document.querySelector('.projects__wrapper');
+       // const divAnimate = document.querySelectorAll('.reveal');
 
             for (const line of lines) {
                 const length = line.getTotalLength();
@@ -38,7 +39,7 @@ class DW_Controller
 
             }
         })*/
-        divProjects.classList.add('js-animation');
+        /*divProjects.classList.add('js-animation');
         document.addEventListener("scroll", () => {
             const {scrollTop, clientHeight} = document.documentElement;
             const topElementToTopViewport = divProjects.getBoundingClientRect().top;
@@ -46,7 +47,31 @@ class DW_Controller
                 divProjects.classList.add('active');
 
             }
-        })
+        })*/
+        function reveal() {
+            let reveals = document.querySelectorAll(".reveal");
+
+
+            for (let i = 0; i < reveals.length; i++) {
+
+                let windowHeight = window.innerHeight;
+                let elementTop = reveals[i].getBoundingClientRect().top;
+                let elementVisible = 10;
+
+                reveals[i].classList.add('js');
+
+                if (elementTop < windowHeight - elementVisible) {
+
+                    reveals[i].classList.add("active");
+                } else {
+
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
 
 
     }

@@ -1,6 +1,6 @@
-    <footer class="footer">
+    <footer class="footer reveal">
         <section class="footer__body">
-            <h2 class="hidden">Footer</h2>
+            <h2 class="hidden" role="heading" aria-level="2" >Footer</h2>
             <?php
             // à changer si l'uri change de format .. format actuel /../contact/
             $path = $_SERVER['REQUEST_URI'];

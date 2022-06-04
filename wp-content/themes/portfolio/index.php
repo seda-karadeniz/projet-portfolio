@@ -76,7 +76,7 @@
             </div>
 
             <div class="introduction__info">
-                <h2 class="introduction__title title" itemprop="name">Seda Karadeniz</h2>
+                <h2 class="introduction__title title" role="heading" aria-level="2" itemprop="name">Seda Karadeniz</h2>
                 <p class="introduction__para subTitle" itemprop="jobTitle">Web development & Web design</p>
                 <a href="a-propos" class="introduction__btn btn"><span>--</span>&Agrave; propos de moi<span>--</span></a>
 
@@ -144,8 +144,8 @@
         </section>
 
         <section class="projects">
-            <h3 class="projects__title title"  id="projets" > Quelques projets</h3>
-                <div class="projects__wrapper">
+            <h3 class="projects__title title" role="heading" aria-level="3"   id="projets" > Quelques projets</h3>
+                <div class="projects__wrapper reveal">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();
                         include(__DIR__ . '/partials/project.php');
@@ -153,7 +153,7 @@
                 </div>
 
 
-            <a href="projets" class="projects__btn btn"><span>--</span>Voir plus de projets<span>--</span></a>
+            <a href="projets" class="projects__btn btn reveal"><span>--</span>Voir plus de projets<span>--</span></a>
         </section>
 
     </main>

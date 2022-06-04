@@ -334,17 +334,17 @@ section.projects a.projects__btn{
 }
 
 
-.js-animation{
-  transform: translateX(-100%);
+.js{
+  position: relative;
+  transform: translateY(150px);
   opacity: 0;
-  transition: transform 1s ease-out,
-  opacity 1s ease-in-out;
-}
-.js-animation.active{
-  transform: translateX(0%);
-  opacity: 1;
+  transition: 2s all ease;
 }
 
+.js.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .introduction__arrow {
   -webkit-animation: mover 1s  alternate;

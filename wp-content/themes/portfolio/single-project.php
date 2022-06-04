@@ -27,7 +27,7 @@
                 </svg>
 
             </div>
-            <h2 class="singleProject__title title"><?= get_the_title(); ?></h2>
+            <h2 class="singleProject__title title" role="heading" aria-level="2" ><?= get_the_title(); ?></h2>
 
         </div>
         <div class="singleProject__wrapper">
@@ -51,9 +51,8 @@
 
 
         <?php endif; ?>
-        <!--todo ajouter un if autour si on a une image pu pas-->
 
-        <div class="singleProject__img">
+        <div class="singleProject__img reveal">
             <?php
             $image = get_field('image');
             $size = 'medium'; // (thumbnail, medium, large, full or custom size)
@@ -97,7 +96,7 @@
              <?php endif;?>
 
         </div>
-        <div class="btn-change-ML">
+        <div class="btn-change-ML reveal">
             <a href="projets" class="singleProject__btn btn"><span>--</span>Retour vers la liste des projets<span>--</span></a>
         </div>
     </main>

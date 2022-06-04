@@ -13,7 +13,7 @@
             </div>
             <?php endif;?>
             <div class="footer__rs">
-                <a href="https://github.com/seda-karadeniz">Github</a>
+                <a href="https://github.com/seda-karadeniz">GitHub</a>
                 <a href="https://www.linkedin.com/in/seda-karadeniz-0a92251ba/">LinkedIn</a>
                 <a href="https://dribbble.com/sedaKaradeniz">Dribbble</a>
                 <a href="https://www.behance.net/sedakaradeniz">Behance</a>

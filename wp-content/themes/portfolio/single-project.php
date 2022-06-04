@@ -51,35 +51,51 @@
 
 
         <?php endif; ?>
+        <!--todo ajouter un if autour si on a une image pu pas-->
 
         <div class="singleProject__img">
-            <figure class="singleProject__img1">
+            <?php
+            $image = get_field('image');
+            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+            if( $image ):?>
+            <a href="<?= wp_get_attachment_image_src(get_field('image'),"large")[0] ?>" data-fancybox="gallery">
+                <figure class="singleProject__img1">
                     <?php
-                    $image = get_field('image');
-                    $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-                    if( $image ) {
+                     {
                         echo wp_get_attachment_image( $image, $size );
                     } ?>
+                </figure>
+            </a>
+             <?php endif;?>
 
+            <?php
+            $image = get_field('image2');
+            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+            if( $image ):?>
+            <a href="<?= wp_get_attachment_image_src(get_field('image2'),"large")[0] ?>" data-fancybox="gallery">
+                <figure class="singleProject__img2">
+                    <?php
+                     {
+                        echo wp_get_attachment_image( $image, $size );
+                    } ?>
+                </figure>
+            </a>
+             <?php endif;?>
 
-            </figure>
+            <?php
+            $image = get_field('image3');
+            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
+            if( $image ):?>
+            <a href="<?= wp_get_attachment_image_src(get_field('image3'),"large")[0] ?>" data-fancybox="gallery">
+                <figure class="singleProject__img3">
+                    <?php
+                     {
+                        echo wp_get_attachment_image( $image, $size );
+                    } ?>
+                </figure>
+            </a>
+             <?php endif;?>
 
-            <figure class="singleProject__img2">
-                <?php
-                $image = get_field('image2');
-                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-                if( $image ) {
-                    echo wp_get_attachment_image( $image, $size );
-                } ?>
-            </figure>
-            <figure class="singleProject__img3">
-                <?php
-                $image = get_field('image3');
-                $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-                if( $image ) {
-                    echo wp_get_attachment_image( $image, $size);
-                } ?>
-            </figure>
         </div>
         <div class="btn-change-ML">
             <a href="projets" class="singleProject__btn btn"><span>--</span>Retour vers la liste des projets<span>--</span></a>

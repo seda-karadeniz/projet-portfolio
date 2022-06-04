@@ -20,11 +20,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= dw_mix('css/style.css'); ?>" />
     <script type="text/javascript" src="<?= dw_mix('js/script.js'); ?>"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-    />
 
 </head>
 <body>

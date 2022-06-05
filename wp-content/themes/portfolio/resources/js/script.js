@@ -16,9 +16,8 @@ class DW_Controller
 
 
         const svg = document.querySelector(".introduction__rect svg");
-        const lines = svg.querySelectorAll('.introduction__rect svg line');
-        //const divProjects = document.querySelector('.projects__wrapper');
-       // const divAnimate = document.querySelectorAll('.reveal');
+        if (svg){
+            const lines = svg.querySelectorAll('.introduction__rect svg line');
 
             for (const line of lines) {
                 const length = line.getTotalLength();
@@ -31,6 +30,12 @@ class DW_Controller
 
             }
 
+        }
+        const divProjects = document.querySelector('.projects__wrapper');
+        const footer= document.querySelector('.footer');
+
+
+
        /*document.addEventListener("scroll", () => {
             if (window.scrollY + window.innerHeight <= window.innerHeight) {
 
@@ -39,38 +44,45 @@ class DW_Controller
 
             }
         })*/
-        /*divProjects.classList.add('js-animation');
+       /* divProjects.classList.add('js');
+        footer.classList.add('js');
         document.addEventListener("scroll", () => {
             const {scrollTop, clientHeight} = document.documentElement;
             const topElementToTopViewport = divProjects.getBoundingClientRect().top;
-            if (scrollTop > + (scrollTop+ topElementToTopViewport).toFixed() - clientHeight * 0.99) {
+            if (scrollTop > + (scrollTop+ topElementToTopViewport).toFixed() - clientHeight * 0.7) {
                 divProjects.classList.add('active');
+                footer.classList.add('active');
 
+            }
+            else {
+
+                divProjects.classList.remove("active");
+                footer.classList.remove("active");
             }
         })*/
-        function reveal() {
-            let reveals = document.querySelectorAll(".reveal");
+             function reveal() {
+                 let reveals = document.querySelectorAll(".reveal");
 
 
-            for (let i = 0; i < reveals.length; i++) {
+                for (let i = 0; i < reveals.length; i++) {
 
-                let windowHeight = window.innerHeight;
-                let elementTop = reveals[i].getBoundingClientRect().top;
-                let elementVisible = 10;
+                     let windowHeight = window.innerHeight;
+                     let elementTop = reveals[i].getBoundingClientRect().top;
+                     let elementVisible = 10;
 
-                reveals[i].classList.add('js');
+                     reveals[i].classList.add('js');
 
-                if (elementTop < windowHeight - elementVisible) {
+                     if (elementTop < windowHeight - elementVisible) {
 
-                    reveals[i].classList.add("active");
-                } else {
+                         reveals[i].classList.add("active");
+                     } else {
 
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
+                         reveals[i].classList.remove("active");
+                     }
+                 }
+             }
 
-        window.addEventListener("scroll", reveal);
+             window.addEventListener("scroll", reveal);
 
 
 

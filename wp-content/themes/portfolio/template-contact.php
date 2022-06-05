@@ -127,7 +127,7 @@
                         <div class="form__field">
                             <label for="rules" class="form__checkbox">
                                 <input type="checkbox" name="rules" id="rules" value="1" />
-                                <span class="form__checklabel"><?= str_replace(':conditions', '<a href="#" class="condition">' . __('conditions générales d\'utilisation', 'dw') . '</a>', __('J\'accepte les :conditions', 'dw')); ?></span>
+                                <span class="form__checklabel"><?= str_replace(':conditions', '<a href="privacy" class="condition">' . __('conditions générales d\'utilisation', 'dw') . '</a>', __('J\'accepte les :conditions', 'dw')); ?></span>
                             </label>
                             <?= dw_get_contact_field_error('rules'); ?>
                         </div>

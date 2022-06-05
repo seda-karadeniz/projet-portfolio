@@ -44,7 +44,7 @@
         <?php
         $url = get_field('url');
         if( $url ): ?>
-        <div class="btn-change-ML">
+        <div class="btn-change-ML reveal">
             <a class="singleProject__project-btn btn" href="<?php echo esc_url( $url ); ?>"><span>--</span>Voir le site<span>--</span></a>
 
         </div>

@@ -144,7 +144,7 @@
         </section>
 
         <section class="projects">
-            <h3 class="projects__title title" role="heading" aria-level="3"   id="projets" > Quelques projets</h3>
+            <h3 class="projects__title title reveal" role="heading" aria-level="3"   id="projets" > Quelques projets</h3>
                 <div class="projects__wrapper reveal">
                     <?php
                     if(($projects = dw_get_projects(2))->have_posts()): while($projects->have_posts()): $projects->the_post();

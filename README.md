@@ -5,8 +5,10 @@
 
 ## Présentation
 
-Mon portfolio est un projet scolaire, réalisé pour le cours de design web de la Haute École de la province de Liège./
-Le but est de mettre en avant nos compétences en développement et en design, pour attirer de futur client à faire appel à nos services ou des employeurs à nous engager./
+Mon portfolio est un projet scolaire, réalisé pour le cours de design web de la Haute École de la province de Liège.
+
+Le but est de mettre en avant nos compétences en développement et en design, pour attirer de futur client à faire appel à nos services ou des employeurs à nous engager.
+
 [Les consignes](https://github.com/hepl-dw/projet-portfolio#quelques-consignes)
 
 ## Cahier des charges

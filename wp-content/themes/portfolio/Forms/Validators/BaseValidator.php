@@ -1,4 +1,5 @@
 <?php
+
 abstract class BaseValidator
 {
     protected $message;

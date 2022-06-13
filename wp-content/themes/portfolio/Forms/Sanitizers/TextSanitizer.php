@@ -1,4 +1,5 @@
 <?php
+
 class TextSanitizer extends BaseSanitizer
 {
     public function getSanitizedValue()

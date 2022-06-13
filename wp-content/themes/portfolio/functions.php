@@ -249,33 +249,32 @@ function dw_get_contact_field_error($field)
     return '<p class="form__error">Problème : ' . $_SESSION['feedback_contact_form']['errors'][$field] . '</p>';
 }*/
 
-
+add_action('admin_post_nopriv_submit_contact_form', 'dw_handle_submit_contact_form');
 add_action('admin_post_submit_contact_form', 'dw_handle_submit_contact_form');
 
 function dw_handle_submit_contact_form()
 {
-
     $form = new ContactFormController($_POST);
 }
 
-function dw_get_contact_field_value($field)
-{
-    if(! isset($_SESSION['contact_form_feedback'])) {
+function dw_get_contact_field_value($field){
+
+    if(!isset($_SESSION['feedback_contact_form'])) {
         return '';
     }
 
-    return $_SESSION['contact_form_feedback']['data'][$field] ?? '';
+    return $_SESSION['feedback_contact_form']['data'][$field] ?? '';
 }
 
 function dw_get_contact_field_error($field)
 {
-    if(! isset($_SESSION['contact_form_feedback'])) {
+    if(! isset($_SESSION['feedback_contact_form'])) {
         return '';
     }
 
-    if(! ($_SESSION['contact_form_feedback']['errors'][$field] ?? null)) {
+    if(! ($_SESSION['feedback_contact_form']['errors'][$field] ?? null)) {
         return '';
     }
 
-    return '<p class="form__error">'. $_SESSION['contact_form_feedback']['errors'][$field]. '</p>';
+    return '<p class="form__error">' . $_SESSION['feedback_contact_form']['errors'][$field] . '</p>';
 }

@@ -27,7 +27,7 @@
     <h1 class="header__title hidden" role="heading" aria-level="1" ><?= get_bloginfo('name'); ?></h1>
     <p class="header__tagline hidden"><?= get_bloginfo('description'); ?></p>
     <div class="logo" itemscope itemtype="http://schema.org/Brand">
-        <a href="/projet-portfolio" itemprop="logo">
+        <a href="/" itemprop="logo">
             <!--todo changer le lien-->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.028" height="32.957" viewBox="0 0 88.028 32.957">
                 <defs>
@@ -48,8 +48,8 @@
     <nav class="header__nav nav" role="navigation">
         <h2 class="nav__title hidden" role="heading" aria-level="2" >Navigation principale</h2>
         <div id="menuToggle" class="nav__toggle">
-
-            <input type="checkbox" />
+            <label for="check" class="hidden">input</label>
+            <input id="check" type="checkbox" />
             <span></span>
             <span></span>
             <ul class="nav__container" id="menu">

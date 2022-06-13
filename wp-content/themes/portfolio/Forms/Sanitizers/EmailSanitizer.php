@@ -1,4 +1,5 @@
 <?php
+
 class EmailSanitizer extends BaseSanitizer
 {
     public function getSanitizedValue()

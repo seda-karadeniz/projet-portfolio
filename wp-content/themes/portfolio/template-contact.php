@@ -99,47 +99,51 @@
 
             <section>
                 <h3 class="hidden" role="heading" aria-level="3" > Formulaire de contact</h3>
-                <?php if(! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
-                    <form action="<?= get_home_url(); ?>/wp-admin/admin-post.php" method="POST" class="contact__form form" id="contact">
-                        <?php if(isset($_SESSION['contact_form_feedback'])) : ?>
-                            <p class="message"><?= __('Oups ! Il y a des erreurs dans le formulaire', 'dw'); ?></p>
+                <?php if (! isset($_SESSION['feedback_contact_form']) || ! $_SESSION['feedback_contact_form']['success']): ?> <!--quand tout va bien -->
+                    <h3 class="sro hidden">Le formulaire de contact</h3>
+                    <form action="<?= get_home_url() ?>/wp-admin/admin-post.php" method="POST" class="contact__form form ">
+                        <?php if (isset($_SESSION['feedback_contact_form']) && ! $_SESSION['feedback_contact_form']['success']) : ?>
+                            <p class="form__errors">Oups! Ce formulaire contient des erreurs, merci de les corriger.</p>
                         <?php endif; ?>
                         <div class="form__field">
-                            <label for="firstname" class="form__label"><?= __('Votre prénom', 'dw'); ?></label>
-                            <input type="text" name="firstname" id="firstname" class="form__input" placeholder="John" value="<?= dw_get_contact_field_value('firstname'); ?>">
-                            <?= dw_get_contact_field_error('firstname'); ?>
+                            <label for="firstname" class="form__label">Prénom *</label>
+                            <input type="text" name="firstname" id="firstname" class="form__input" placeholder="John" value="<?= dw_get_contact_field_value('firstname') ?>" placeholder="Votre prénom">
+                            <?= dw_get_contact_field_error('firstname') ?>
                         </div>
                         <div class="form__field">
-                            <label for="lastname" class="form__label"><?= __('Votre nom', 'dw'); ?></label>
-                            <input type="text" name="lastname" id="lastname" class="form__input" placeholder="Doe" value="<?= dw_get_contact_field_value('lastname'); ?>">
-                            <?= dw_get_contact_field_error('lastname'); ?>
+                            <label for="lastname" class="form__label">Nom *</label>
+                            <input type="text" name="lastname" id="lastname" class="form__input" placeholder="Doe" value="<?= dw_get_contact_field_value('lastname') ?>" placeholder="Votre nom">
+                            <?= dw_get_contact_field_error('lastname') ?>
                         </div>
                         <div class="form__field">
-                            <label for="email" class="form__label"><?= __('Votre adresse e-mail', 'dw'); ?></label>
-                            <input type="email" name="email" id="email" class="form__input" placeholder="John@Doe.com" value="<?= dw_get_contact_field_value('email'); ?>">
-                            <?= dw_get_contact_field_error('email'); ?>
+                            <label for="email" class="form__label">Email *</label>
+                            <input type="email" name="email" id="email" placeholder="John@doe.com" class="form__input" value="<?= dw_get_contact_field_value('email') ?>" placeholder="Votre email">
+                            <?= dw_get_contact_field_error('email') ?>
                         </div>
                         <div class="form__field">
-                            <label for="message" class="form__label"><?= __('Votre message', 'dw'); ?></label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Bonjour Seda, ..." class="form__input"><?= dw_get_contact_field_value('message'); ?></textarea>
-                            <?= dw_get_contact_field_error('message'); ?>
+                            <label for="message" class="form__label">Message *</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form__textarea" placeholder="Votre message"><?= dw_get_contact_field_value('message') ?></textarea>
+                            <?= dw_get_contact_field_error('message') ?>
                         </div>
-                        <div class="form__field">
-                            <label for="rules" class="form__checkbox">
-                                <input type="checkbox" name="rules" id="rules" value="1" />
-                                <span class="form__checklabel"><?= str_replace(':conditions', '<a href="privacy" class="condition">' . __('conditions générales d\'utilisation', 'dw') . '</a>', __('J\'accepte les :conditions', 'dw')); ?></span>
-                            </label>
-                            <?= dw_get_contact_field_error('rules'); ?>
-                        </div>
-                        <div class="form__actions">
-                            <?php wp_nonce_field('nonce_submit_contact'); ?>
-                            <input type="hidden" name="action" value="submit_contact_form" />
-                            <button class="form__button btn" type="submit"><span>--</span><?= __('Envoyer','dw'); ?><span>--</span></button>
+                        <div class="form__field--last">
+                            <div class="form__field">
+                                <label for="rules" class="form__checkbox">
+                                    <input type="checkbox" name="rules" id="rules" value="1">
+                                    <span class="form__checklabel">J'ai lu et j'accepte les <a href="privacy" class="condition">conditions générales d'utilisations</a>.</span>
+                                </label>
+                                <?= dw_get_contact_field_error('rules') ?>
+                            </div>
+                            <div class="form__actions">
+                                <?php wp_nonce_field('nonce_submit_contact'); ?>
+                                <input type="hidden" name="action" value="submit_contact_form" />
+                                <button type="submit" class="form__button btn"><span>--</span>Envoyer<span>--</span></button>
+                            </div>
                         </div>
                     </form>
-                <?php else : ?>
-                    <p id="contact" class="message-envoi btn"><?= __('Merci ! Votre message a bien été envoyé.','dw'); ?></p>
-                    <?php unset($_SESSION['contact_form_feedback']); endif; ?>
+                <?php else: ?>
+                    <p class="message-envoi btn">Merci de nous avoir contacté. A bientot!</p>
+                <?php endif; ?>
+                <?php unset($_SESSION['feedback_contact_form']); ?>
             </section>
         </div>
 

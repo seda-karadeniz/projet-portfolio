@@ -1,4 +1,5 @@
 <?php
+
 class ContactFormController extends BaseFormController
 {
     protected function getNonceKey() : string
@@ -32,7 +33,7 @@ class ContactFormController extends BaseFormController
     protected function redirectWithErrors($errors)
     {
         // C'est pas OK, on place les erreurs de validation dans la session
-        $_SESSION['contact_form_feedback'] = [
+        $_SESSION['feedback_contact_form'] = [
             'success' => false,
             'data' => $this->data,
             'errors' => $errors,
@@ -53,8 +54,11 @@ class ContactFormController extends BaseFormController
         ]);
 
         // Générer un email contenant l'URL vers le post en question
-        $feedback = 'Bonjour, Vous avez un nouveau message.<br />';
-        $feedback .= 'Y accéder : ' . get_edit_post_link($id);
+        $feedback = 'Bonjour, Vous avez un nouveau message.<br>';
+        $feedback .= 'Y accéder : ' . get_edit_post_link($id) .'<br>';
+        $feedback .= $this->data['firstname'] . ' ' . $this->data['lastname'] .'<br>';
+        $feedback .= $this->data['message'] .'<br><br><br><br>';
+        $feedback .= 'Répondre à' . $this->data['email'];
 
         // Envoyer l'email à l'admin
         wp_mail(get_bloginfo('admin_email'), 'Nouveau message !', $feedback);
@@ -63,7 +67,7 @@ class ContactFormController extends BaseFormController
     protected function redirectWithSuccess()
     {
         // Ajouter le feedback positif à la session
-        $_SESSION['contact_form_feedback'] = [
+        $_SESSION['feedback_contact_form'] = [
             'success' => true,
         ];
 
